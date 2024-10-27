@@ -6,11 +6,11 @@ import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 
 const TodoForm = () => {
-  // const [fruits, setFruits] = useState([]);
-  // const { data: session } = useSession();
-  // const [editingFruit, setEditingFruit] = useState(null);
-  // const [name, setName] = useState("");
-  // const [price, setPrice] = useState("");
+  const [fruits, setFruits] = useState([]);
+  const { data: session } = useSession();
+  const [editingFruit, setEditingFruit] = useState(null);
+  const [name, setName] = useState("");
+  const [price, setPrice] = useState("");
 
   const loadData = async () => {
     const resp = await fetch(`https://next-todo-omega-liart.vercel.app/my-booking/api/${session?.user?.email}`);
