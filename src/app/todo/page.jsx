@@ -2,38 +2,6 @@
 
 "use client";
 
-// import { useSession } from "next-auth/react";
-// import { useEffect, useState } from "react";
-
-// const TodoForm = () => {
-//   const [fruits, setFruits] = useState([]);
-//   const { data: session } = useSession();
-
-//   const loadData = async () => {
-//     const resp = await fetch(`https://next-todo-omega-liart.vercel.app/my-booking/api/${session?.user?.email}`);
-//     const data = await resp.json();
-//     setFruits(data?.myBookings);
-//   };
-
-//   useEffect(() => {
-//     if (session?.user?.email) loadData();
-//   }, [session]);
-
-//   const handleBooking = async (e) => {
-//     e.preventDefault();
-//     const bookInfo = {
-//       email: session.user.email,
-//       name: e.target.name.value,
-//       price: e.target.price.value,
-//     };
-
-//     await fetch("https://next-todo-omega-liart.vercel.app/todo/api/new-booking", {
-//       method: "POST",
-//       body: JSON.stringify(bookInfo),
-//       headers: { "content-type": "application/json" },
-//     });
-//     loadData(); // Refresh after adding a new booking
-//   };
 
 //   const handleDelete = async (id) => {
 //     const response = await fetch(`https://next-todo-omega-liart.vercel.app/my-booking/api/delete-booking/${id}`, {
