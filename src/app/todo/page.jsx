@@ -1,22 +1,6 @@
 
-
 "use client";
 
-
-
-
-//               </li>
-//             ))}
-//           </ul>
-//         ) : (
-//           <p className="mt-4 text-gray-600">No fruits added yet.</p>
-//         )}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default TodoForm;
 
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
