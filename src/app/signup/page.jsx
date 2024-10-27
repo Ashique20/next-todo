@@ -10,7 +10,7 @@ const SignupForm = () => {
         email :  e.target.email.value  ,     
          password :  e.target.password.value 
         }
-        const resp = await fetch ("http://localhost:3000/signup/api",{
+        const resp = await fetch ("https://next-todo-omega-liart.vercel.app/signup/api",{
             method:'POST',
             body:JSON.stringify(newUser),
             headers:{
