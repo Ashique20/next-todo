@@ -23,6 +23,7 @@ const TodoForm = () => {
   }, [session]);
 
   useEffect(() => {
+    // Update input values when editingFruit changes
     if (editingFruit) {
       setName(editingFruit.name);
       setPrice(editingFruit.price);
