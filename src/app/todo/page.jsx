@@ -10,7 +10,7 @@
 //   const { data: session } = useSession();
 
 //   const loadData = async () => {
-//     const resp = await fetch(`http://localhost:3000/my-booking/api/${session?.user?.email}`);
+//     const resp = await fetch(`https://next-todo-iota-olive.vercel.app/my-booking/api/${session?.user?.email}`);
 //     const data = await resp.json();
 //     setFruits(data?.myBookings);
 //   };
@@ -27,7 +27,7 @@
 //       price: e.target.price.value,
 //     };
 
-//     await fetch("http://localhost:3000/todo/api/new-booking", {
+//     await fetch("https://next-todo-iota-olive.vercel.app/todo/api/new-booking", {
 //       method: "POST",
 //       body: JSON.stringify(bookInfo),
 //       headers: { "content-type": "application/json" },
@@ -36,7 +36,7 @@
 //   };
 
 //   const handleDelete = async (id) => {
-//     const response = await fetch(`http://localhost:3000/my-booking/api/delete-booking/${id}`, {
+//     const response = await fetch(`https://next-todo-iota-olive.vercel.app/my-booking/api/delete-booking/${id}`, {
 //       method: "DELETE",
 //     });
 //     const result = await response.json();
@@ -100,7 +100,7 @@
 //   const [editingFruit, setEditingFruit] = useState(null);
 
 //   const loadData = async () => {
-//     const resp = await fetch(`http://localhost:3000/my-booking/api/${session?.user?.email}`);
+//     const resp = await fetch(`https://next-todo-iota-olive.vercel.app/my-booking/api/${session?.user?.email}`);
 //     const data = await resp.json();
 //     setFruits(data?.myBookings);
 //   };
@@ -116,7 +116,7 @@
 //       name: e.target.name.value,
 //       price: e.target.price.value,
 //     };
-//     await fetch("http://localhost:3000/todo/api/new-booking", {
+//     await fetch("https://next-todo-iota-olive.vercel.app/todo/api/new-booking", {
 //       method: "POST",
 //       body: JSON.stringify(bookInfo),
 //       headers: { "content-type": "application/json" },
@@ -125,7 +125,7 @@
 //   };
 
 //   const handleDelete = async (id) => {
-//     const response = await fetch(`http://localhost:3000/my-booking/api/delete-booking/${id}`, {
+//     const response = await fetch(`https://next-todo-iota-olive.vercel.app/my-booking/api/delete-booking/${id}`, {
 //       method: "DELETE",
 //     });
 //     const result = await response.json();
@@ -146,7 +146,7 @@
 //       name: e.target.name.value,
 //       price: e.target.price.value,
 //     };
-//     const response = await fetch(`http://localhost:3000/my-booking/api/update-booking/${editingFruit._id}`, {
+//     const response = await fetch(`https://next-todo-iota-olive.vercel.app/my-booking/api/update-booking/${editingFruit._id}`, {
 //       method: "PATCH",
 //       body: JSON.stringify(updatedInfo),
 //       headers: { "content-type": "application/json" },
@@ -228,7 +228,7 @@ const TodoForm = () => {
   const [price, setPrice] = useState("");
 
   const loadData = async () => {
-    const resp = await fetch(`http://localhost:3000/my-booking/api/${session?.user?.email}`);
+    const resp = await fetch(`https://next-todo-iota-olive.vercel.app/my-booking/api/${session?.user?.email}`);
     const data = await resp.json();
     setFruits(data?.myBookings);
   };
@@ -255,7 +255,7 @@ const TodoForm = () => {
       name: e.target.name.value,
       price: e.target.price.value,
     };
-    await fetch("http://localhost:3000/todo/api/new-booking", {
+    await fetch("https://next-todo-iota-olive.vercel.app/todo/api/new-booking", {
       method: "POST",
       body: JSON.stringify(bookInfo),
       headers: { "content-type": "application/json" },
@@ -264,7 +264,7 @@ const TodoForm = () => {
   };
 
   const handleDelete = async (id) => {
-    const response = await fetch(`http://localhost:3000/my-booking/api/delete-booking/${id}`, {
+    const response = await fetch(`https://next-todo-iota-olive.vercel.app/my-booking/api/delete-booking/${id}`, {
       method: "DELETE",
     });
     const result = await response.json();
@@ -285,7 +285,7 @@ const TodoForm = () => {
       name,
       price,
     };
-    const response = await fetch(`http://localhost:3000/my-booking/api/update-booking/${editingFruit._id}`, {
+    const response = await fetch(`https://next-todo-iota-olive.vercel.app/my-booking/api/update-booking/${editingFruit._id}`, {
       method: "PATCH",
       body: JSON.stringify(updatedInfo),
       headers: { "content-type": "application/json" },
