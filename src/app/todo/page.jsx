@@ -3,18 +3,7 @@
 "use client";
 
 
-//   const handleDelete = async (id) => {
-//     const response = await fetch(`https://next-todo-omega-liart.vercel.app/my-booking/api/delete-booking/${id}`, {
-//       method: "DELETE",
-//     });
-//     const result = await response.json();
 
-//     if (result?.response?.deletedCount > 0) {
-//       setFruits((prevFruits) => prevFruits.filter((fruit) => fruit._id !== id));
-//     } else {
-//       console.error("Failed to delete booking");
-//     }
-//   };
 
 //   return (
 //     <div className="ml-[40%]">
