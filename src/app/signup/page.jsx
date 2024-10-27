@@ -37,13 +37,13 @@ const SignupForm = () => {
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
-                <input name="email" type="email" placeholder="email" className="input input-bordered" required />
+                <input clas name="email" type="email" placeholder="email" className="input input-bordered text-black" required />
               </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
-                <input name="password" type="password" placeholder="password" className="input input-bordered" required />
+                <input name="password" type="password" placeholder="password" className="input input-bordered text-black" required />
                 <label className="label">
                   <a href="/login" className="label-text-alt link link-hover">Click to signin?</a>
                 </label>
