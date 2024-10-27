@@ -250,11 +250,11 @@ const TodoForm = () => {
 
   const handleBooking = async (e) => {
     e.preventDefault();
-    // const bookInfo = {
-    //   email: session?.user?.email,
-    //   name: e.target.name.value,
-    //   price: e.target.price.value,
-    // };
+    const bookInfo = {
+      email: session?.user?.email,
+      name: e.target.name.value,
+      price: e.target.price.value,
+    };
     await fetch("http://localhost:3000/todo/api/new-booking", {
       method: "POST",
       body: JSON.stringify(bookInfo),
