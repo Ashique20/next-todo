@@ -121,7 +121,7 @@ const TodoForm = () => {
       <div className="mt-6">
         <h2 className="text-xl font-semibold">My Bookings</h2>
         {fruits.length > 0 ? (
-          <ul className="list-disc pl-5 space-y-2 mt-4 bg-primary">
+          <ul className="list-disc pl-5 space-y-2 mt-4 ">
             {fruits.map((fruit) => (
               <li key={fruit._id} className="text-white p-2 rounded-md shadow-sm">
                 <p className="font-medium">{fruit.name}</p>
